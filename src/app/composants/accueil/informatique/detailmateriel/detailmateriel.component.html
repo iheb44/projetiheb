@@ -16,9 +16,8 @@
           
                 <h3> liste des commentaires </h3>
                     <ng-container *ngFor="let c of det.commentaires ; index as i ">
-                         <div class="alert alert-primary" role="alert"> commentaire n° {{i+1}}</div>
                          <div  class="col">
-                         <ihe-comment [com] = "c"></ihe-comment>
+                         <ihe-comment [com] = "c" [index] = "i"></ihe-comment>
                          </div>
                     </ng-container>
             </div>

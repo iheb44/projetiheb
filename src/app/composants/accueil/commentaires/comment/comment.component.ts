@@ -8,8 +8,7 @@ import { Commentaire } from 'src/app/models/commentaire';
 })
 export class CommentComponent implements OnInit {
   @Input() com: Commentaire = new Commentaire();  
-
-
+  @Input() index:number;
   constructor() { }
 
   ngOnInit(): void {
