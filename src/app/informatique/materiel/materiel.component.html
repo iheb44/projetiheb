@@ -1,8 +1,20 @@
-<img [src]="e.photo" alt="photo">
-{{e.libelle | titlecase}}
-<span class="badge badge pill"
+
+
+<div class="card text-center">
+  <div class="card-header">
+    {{e.libelle | titlecase}}
+  </div>
+  <div class="card-body">
+    <img [src]="e.photo" alt="photo">
+    <br>
+    <span class="badge badge pill"
     [ngClass]="{'badge-primary':e.hautGamme,
                 'badge-dark':!e.hautGamme}">
     Prix : {{e.prix}} DT
     <i  [ngClass]="{ 'fa fa-thumbs-up': e.hautGamme}"></i>
-            </span>
+     </span>
+  </div>
+  <div class="card-footer text-muted">
+    <button type="button" class="btn btn-primary">details</button>
+  </div>
+</div>
