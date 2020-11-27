@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Materiel } from '../../../models/materiel';
+import { Materiel } from '../../../../models/materiel';
 
 @Component({
   selector: 'ihe-listmateriel',
@@ -8,7 +8,7 @@ import { Materiel } from '../../../models/materiel';
 })
 export class ListmaterielComponent implements OnInit {
   materiels:Materiel[]=[
-    {   
+    {
         id: '1',
         libelle: 'Ecran',
         photo: 'assets/Images/Informatique/ecran.png',

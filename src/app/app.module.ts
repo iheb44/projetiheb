@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AccueilComponent } from './accueil/accueil.component';
-import { ListmaterielComponent } from './informatique\\materiel/listmateriel/listmateriel.component';
-import { MaterielComponent } from './informatique/materiel/materiel.component';
-import { DetailmaterielComponent } from './informatique/detailmateriel/detailmateriel.component';
+import { AccueilComponent } from './composants/accueil/accueil.component';
+import { ListmaterielComponent } from './composants/accueil/informatique/listmateriel/listmateriel.component';
+import { MaterielComponent } from './composants/accueil/informatique/materiel/materiel.component';
+import { DetailmaterielComponent } from './composants/accueil/informatique/detailmateriel/detailmateriel.component';
+import { CommentComponent } from './composants/accueil/commentaires/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DetailmaterielComponent } from './informatique/detailmateriel/detailmat
     AccueilComponent,
     ListmaterielComponent,
     MaterielComponent,
-    DetailmaterielComponent
+    DetailmaterielComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

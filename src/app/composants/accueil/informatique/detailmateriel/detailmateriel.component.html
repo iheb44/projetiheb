@@ -1,0 +1,28 @@
+<h1 class="c1"> Detail de {{det.libelle}} {{det.id}}</h1>
+<ul class="list-group"> 
+   <div class="container">
+       <div class="row">
+            <div class="col-4">
+                <li class="list-group-item"> <img [src]="det.photo"></li>
+                <li class="list-group-item"> marque {{det.marque}} </li>
+                <li class="list-group-item"> prix {{det.prix}} </li>
+                <li class="list-group-item"> description {{det.description}}</li>
+                <li class="list-group-item"> quantite {{det.quantite}}</li>
+                <li class="list-group-item"> <input type="checkbox" [checked] ="det.hautGamme"> hout de gamme </li>
+                <button class="btn btn-primary" (click)="onshow()"> afficher les commentaires</button>   
+            </div>  
+     
+            <div *ngIf="!showing">
+          
+                <h3> liste des commentaires </h3>
+                    <ng-container *ngFor="let c of det.commentaires ; index as i ">
+                         <div class="alert alert-primary" role="alert"> commentaire n° {{i+1}}</div>
+                         <div  class="col">
+                         <ihe-comment [com] = "c"></ihe-comment>
+                         </div>
+                    </ng-container>
+            </div>
+       </div>
+   </div>
+   
+</ul>
