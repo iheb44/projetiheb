@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Materiel } from '../models/materiel';
+import { Materiel } from '../../../models/materiel';
 
 @Component({
   selector: 'ihe-listmateriel',
