@@ -1,13 +1,13 @@
 import { Commentaire }
 from './commentaire';
 export class Materiel {
- id:string;
- libelle:string;
- photo: string;
- marque: string;
- prix: number;
- description: string;
- hautGamme: boolean;
- quantite: number;
- commentaires: Commentaire[];
+ public id:string;
+ public libelle:string;
+ public photo: string;
+ public marque: string;
+ public prix: number;
+ public description: string;
+ public hautGamme: boolean;
+ public quantite: number;
+ public commentaires: Commentaire[];
 }
